@@ -11,6 +11,10 @@ gem 'haml-rails', '>= 0.3.4'
 gem 'mysql'
 gem 'simple_form'
 
+group :production do
+  gem "pg", "~> 0.15.1"
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
