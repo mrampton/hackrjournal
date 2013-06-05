@@ -15,6 +15,9 @@
 /log/*.log
 /tmp
 
+# Ignore Guardfile for continuous testing
+Guardfile
+
 # Ignore application configuration
 /config/application.yml
 doc/
