@@ -13,6 +13,9 @@ gem 'simple_form'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
+  gem 'guard-rspec', '3.0.1'
+  gem 'guard-spork'
+  gem 'spork-rails'
 end
 
 group :production do
@@ -20,7 +23,9 @@ group :production do
 end
 
 group :test do
+  gem 'rb-fsevent', '0.9.3'
   gem 'capybara', '2.1.0'
+  gem "ruby_gntp", "~> 0.3.4"
 end
 
 # Gems used only for assets and not required
