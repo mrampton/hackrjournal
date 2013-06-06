@@ -1,8 +1,8 @@
 module ApplicationHelper
 
-  def full_title(page_title)
-    base_title = "#{ENV['BRAND']}"
-    if page_title.empty?
+  def full_title(page_title=nil)
+    base_title = TITLE
+    if page_title.blank?
       base_title
     else
       "#{base_title} | #{page_title}"
