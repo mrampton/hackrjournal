@@ -1,0 +1,2 @@
+BRAND = "hackrjournal"
+TITLE = BRAND
