@@ -8,13 +8,13 @@ gem 'rails', '3.2.13'
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'haml-rails', '>= 0.3.4'
-gem 'mysql'
 gem 'simple_form'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.0'
   gem 'guard-rspec', '3.0.1'
   gem 'guard-spork'
+  gem 'mysql2'
+  gem 'rspec-rails', '~> 2.0'
   gem 'spork-rails'
 end
 

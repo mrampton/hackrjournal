@@ -1,3 +1,7 @@
-- provide(:title, "Home")
-%h1 Your Path
-%p Here lies the brick you lay
+.center.hero-unit
+  %h1 Welcome,
+  %h2 #{ENV['BRAND']} is the story of you.  
+  %h3 
+    %p Feed it snippets of the code you write, the projects you pursue. 
+    %p And reflect upon mistakes made and lessons learned.
+  =link_to "Sign up", signup_path, class: "btn btn-large btn-primary"

@@ -95,7 +95,7 @@ GEM
     method_source (0.8.1)
     mime-types (1.23)
     multi_json (1.7.6)
-    mysql (2.9.1)
+    mysql2 (0.3.11)
     nokogiri (1.5.9)
     pg (0.15.1)
     polyglot (0.3.3)
@@ -191,7 +191,7 @@ DEPENDENCIES
   guard-spork
   haml-rails (>= 0.3.4)
   jquery-rails
-  mysql
+  mysql2
   pg (~> 0.15.1)
   rails (= 3.2.13)
   rb-fsevent (= 0.9.3)
