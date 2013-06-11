@@ -6,9 +6,11 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby', '3.0.1'
 gem 'figaro'
 gem 'haml-rails', '>= 0.3.4'
 gem 'simple_form'
+
 
 group :development, :test do
   gem 'guard-rspec', '3.0.1'
@@ -16,6 +18,10 @@ group :development, :test do
   gem 'mysql2'
   gem 'rspec-rails', '~> 2.0'
   gem 'spork-rails'
+end
+
+group :development do 
+  gem 'annotate'
 end
 
 group :production do
