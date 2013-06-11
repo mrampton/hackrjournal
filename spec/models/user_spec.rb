@@ -91,6 +91,14 @@ describe User do
     it { should_not be_valid }
   end
   
+  describe "when an email is not all lowercase" do
+    before do
+      @user.email = "ALLCAPS@FOO.COM"
+      @user.save
+    end 
+    its(:email) { should eq("allcaps@foo.com") }
+  end
+  
   describe "return value of authenticate method" do 
     before { @user.save }
     let(:found_user) { User.find_by_email(@user.email) }
