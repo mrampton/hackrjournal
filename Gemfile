@@ -32,6 +32,7 @@ group :test do
   gem 'rb-fsevent', '0.9.3'
   gem 'capybara', '2.1.0'
   gem "ruby_gntp", "~> 0.3.4"
+  gem 'factory_girl_rails', '4.2.1'
 end
 
 # Gems used only for assets and not required
